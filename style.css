@@ -1,0 +1,317 @@
+/* =========================
+    RESET CSS
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+    BODY - Nền xám sáng để tôn màu cam
+========================= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+    HEADER - Đen sang trọng làm nền cho chữ trắng
+========================= */
+header {
+    background-color: #1a1a1a; /* Đen tuyền siêu chất */
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* =========================
+    MENU ĐIỀU HƯỚNG - NỔI BẬT VỚI MÀU CAM CHÁY
+========================= */
+nav {
+    background-color: #ff6b00; /* Màu Cam Cháy cực kỳ nổi bật và năng động */
+    color: white;
+    text-align: center;
+    padding: 14px;
+    grid-column: 1 / span 2;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav ul { 
+    list-style: none; 
+}
+
+nav ul li { 
+    display: inline; 
+    margin-right: 25px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+nav ul li a:hover { 
+    color: #b43434; /* Rê chuột vào chữ đổi sang đen */
+}
+
+/* =========================
+    DANH SÁCH SẢN PHẨM
+========================= */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-column: 1;
+}
+
+/* =========================
+    THẺ SẢN PHẨM
+========================= */
+.product-card {
+    background-color: white;
+    border: 1px solid #eedfd3;
+    border-radius: 12px; /* Bo góc tròn hơn nhìn hiện đại */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Nhấc cao hơn khi hover */
+    box-shadow: 0 8px 20px rgba(255, 107, 0, 0.15); /* Đổ bóng màu cam */
+    border-color: #ff6b00;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* =========================
+    SIDEBAR - Xám than cá tính
+========================= */
+.sidebar {
+    background-color: #212529; /* Đổi sidebar sang màu tối cực ngầu */
+    color: #f8f9fa;
+    padding: 25px;
+    grid-column: 2;
+    border-left: 4px solid #ff6b00; /* Điểm nhấn viền cam bên cạnh */
+}
+
+.sidebar h3 {
+    color: #ff6b00; /* Tiêu đề chữ cam rực rỡ */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.social-icons { 
+    margin-top: 20px; 
+}
+
+.social-icons a {
+    color: #ced4da;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover { 
+    color: #ff6b00; 
+}
+
+/* =========================
+    FOOTER
+========================= */
+.footer {
+    background-color: #0d0d0d;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    grid-column: 1 / span 2;
+    display: grid;
+    border-top: 2px solid #ff6b00;
+}
+
+/* =========================
+    BUTTONS - NÚT BẤM SIÊU NỔI
+========================= */
+.button {
+    background-color: #ff6b00; /* Nút màu cam rực */
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+
+.button:hover { 
+    background-color: #e05e00; /* Cam đậm hơn khi hover */
+    box-shadow: 0 4px 10px rgba(255, 107, 0, 0.3);
+}
+
+.button1 { border-radius: 4px; }
+.button3 { border-radius: 8px; }
+.button4 { border-radius: 20px; } /* Nút hình oval thời thượng */
+.button5 { border-radius: 50%; }
+
+/* =========================================
+   CHI TIẾT SẢN PHẨM (NỔI BẬT - SANG TRỌNG)
+============================================ */
+.detail-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 35px;
+    background: white;
+    grid-column: 1 / span 2;
+}
+
+.product-detail-wrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.detail-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.detail-info h1 {
+    font-size: 2.4rem;
+    color: #1a1a1a;
+    font-weight: 800;
+}
+
+/* Giá tiền siêu to khổng lồ, màu cam cháy nổi bần bật */
+.detail-info .price {
+    font-size: 2.2rem;
+    color: #ff6b00; 
+    font-weight: 800;
+    margin: 20px 0;
+    background-color: #fff0e6; /* Nền cam nhạt làm nổi bật giá */
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+.detail-info .description {
+    line-height: 1.7;
+    color: #495057;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.back-nav { 
+    margin-bottom: 25px; 
+}
+
+/* Nút quay lại viền đen cá tính */
+.back-nav .button {
+    background-color: transparent;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+}
+
+.back-nav .button:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* =========================
+    RESPONSIVE MEDIA QUERIES
+========================= */
+@media (min-width: 768px) {
+    .footer { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .product-detail-wrapper { flex-direction: column; gap: 30px; }
+}
+
+@media (max-width: 576px) {
+    body { grid-template-columns: 1fr; }
+    .product-list { grid-template-columns: 1fr; }
+    .product-card { width: 100%; margin-bottom: 20px; }
+    .sidebar { grid-column: 1 / span 2; border-left: none; border-top: 4px solid #ff6b00; }
+    .footer { grid-template-columns: 1fr; }
+}
+/* =========================================
+   BỔ SUNG CHO NÚT GIỎ HÀNG VÀ TIẾP TỤC MUA SẮM
+============================================ */
+
+/* Khung chứa 2 nút Mua ngay & Giỏ hàng nằm song song */
+.action-buttons {
+    display: flex;
+    gap: 15px; /* Tạo khoảng cách giữa 2 nút */
+    margin-top: 20px;
+}
+
+/* Nút Thêm vào giỏ hàng (Nền trong suốt, viền cam) */
+.btn-add-cart {
+    background-color: transparent !important;
+    color: #ff6b00 !important;
+    border: 2px solid #ff6b00 !important;
+    flex: 1; /* Chiều rộng tự co giãn đều nhau */
+}
+
+.btn-add-cart:hover {
+    background-color: #fff0e6 !important; /* Đổi nền cam cực nhạt khi rê chuột */
+    box-shadow: 0 4px 10px rgba(255, 107, 0, 0.1) !important;
+}
+
+/* Nút Mua ngay (Nền cam đầy đủ) */
+.btn-buy-now {
+    flex: 1;
+}
+
+/* Tùy biến lại chữ "Tiếp tục mua sắm" ở đầu trang cho tinh tế, giống các web lớn */
+.back-link {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+    padding: 8px 0;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #ff6b00; /* Di chuột vào sẽ đổi sang màu cam cháy */
+}
+
+/* Responsive cho điện thoại: 2 nút bấm sẽ xếp chồng lên nhau cho dễ bấm */
+@media (max-width: 576px) {
+    .action-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
